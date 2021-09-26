@@ -113,6 +113,17 @@ form.sign-in-form {
   font-size: 1rem;
 }
 
+div > form.sign-in-form > p.social-pass > a {
+  padding: 0.7rem 0;
+  margin: 5px 0;
+  font-size: 1rem;
+  color: rgb(63, 63, 219);
+  text-decoration: none;
+}
+div > form.sign-in-form > p.social-pass > a:hover {
+  color: rgb(95, 95, 221);
+}
+
 .social-media {
   display: flex;
   justify-content: center;
