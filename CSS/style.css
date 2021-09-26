@@ -399,7 +399,7 @@ a {
     font-size: 0.7rem
 }
 
-img {
+div.main div.col-2 img {
     width: 3.5rem
 }
 
@@ -458,7 +458,6 @@ input:focus::-webkit-input-placeholder {
     box-shadow: none;
     color: white;
     -webkit-box-shadow: none;
-    -webkit-user-select: none;
     transition: none
 }
 
