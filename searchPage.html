@@ -17,42 +17,36 @@
     <link rel="stylesheet" href="./CSS/style.css">
 
     <style>
-        .small-img-group {
-            display: flex;
-            justify-content: space-between;
+        .product img {
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            object-fit: cover;
         }
 
-        .small-img-col {
-            flex-basis: 24%;
-            cursor: pointer;
+        #featured>div.row.mx-auto.container>div.row.mx-auto.container>div.row.mx-auto.container>div.row.mx-auto.container>nav>ul>li.page-item.active>a {
+            background-color: black;
         }
 
-        .sproduct select {
-            display: block;
-            padding: 5px 10px;
+        #featured>div.row.mx-auto.container>div.row.mx-auto.container>div.row.mx-auto.container>div.row.mx-auto.container>nav>ul>li:nth-child(n):hover>a {
+            background-color: coral;
+            color: #fff;
         }
 
-        .sproduct input {
-            width: 50px;
-            height: 40px;
-            padding-left: 10px;
-            font-size: 16px;
-            margin-right: 10px;
+        .pagination a {
+            color: black;
         }
 
-        .buy-btn {
-            background-color: #fb774b;
-            opacity: 1;
-            transition: 0.3s all;
+        #navbarSupportedContent input[type=text]:focus {
+            border: 2px solid coral;
         }
     </style>
-    <title>Product Details</title>
+    <title>Shop</title>
 </head>
 
 <body>
 
     <!-- NAVIGATION -->
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
         <div class="container">
             <img id="logo" src="./IMG/logo.png" alt="online shopping logo">
@@ -61,25 +55,20 @@
                 aria-label="Toggle navigation">
                 <span id="bar"><i class="fas fa-bars"></i></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <input style="height: 35px; width:200px; border-radius: 10px; margin-top: 30px; margin-left: 100px; padding: 10px;" type="text" placeholder="Search Products">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="home.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="color: #e63946;" aria-current="page" href="shop.html">Shop</a>
+                        <a class="nav-link" aria-current="page" href="./shop.html">Shop</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="./cart.html">Cart</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./index.html">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./searchPage.html"><i class="fal fa-search"></i></a>
                         <i class="fas fa-user"></i>
                     </li>
                 </ul>
@@ -87,57 +76,15 @@
         </div>
     </nav>
 
-    <!-- MAIN SECTION -->
-    <section class="container sproduct my-5 pt-5">
-        <div class="row mt-5">
-            <div class="col-lg-5 col-md-12 col-12">
-                <img class="img-fluid w-100 pb-1" id="MainImg" src="IMG/shop/1.jpg" alt="T-shirt">
-
-                <div class="small-img-group">
-                    <div class="small-img-col">
-                        <img src="IMG/shop/1.jpg" width="100%" class="small-img" alt="black shirt">
-                    </div>
-                    <div class="small-img-col">
-                        <img src="IMG/shop/24.jpg" width="100%" class="small-img" alt="white shirt">
-                    </div>
-                    <div class="small-img-col">
-                        <img src="IMG/shop/25.jpg" width="100%" class="small-img" alt="red shirt">
-                    </div>
-                    <div class="small-img-col">
-                        <img src="IMG/shop/26.jpg" width="100%" class="small-img" alt="green shirt">
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-md-12 col-12">
-                <h6>Home / T-Shirts</h6>
-                <h3 class="py-4">Men's Fashion T Shirt</h3>
-                <h2>500Rs</h2>
-                <select class="my-3">
-                    <option>Select Size</option>
-                    <option>XL</option>
-                    <option>XXL</option>
-                    <option>Small</option>
-                    <option>Large</option>
-                </select>
-                <input type="number" min="1" max="10" value="1">
-                <button class="buy-btn">Add To Cart</button>
-                <h4 class="my-5">Product Details</h4>
-                <span>The Gilden Ultra Cotton T-shirt is made from a substantial 6.0 oz. per sq. yd. fabric constructed
-                    from 100% cotton, this classic fit preshrunk jersey knit provides unmatched comfort with each wear.
-                    Featuring in range of colors, it offers it all in the ultimate head-turning package.</span>
-            </div>
-        </div>
-    </section>
-
-    <section id="featured" class="my-5 pb-5">
+    <section id="watches" class="my-10">
         <div class="container text-center mt-5 py-5">
-            <h3>Our Featured</h3>
+            <h3>Best Watches</h3>
             <hr class="mx-auto">
+            <p>Here you can check our new products with fair price on our website</p>
         </div>
         <div class="row mx-auto container-fluid">
             <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="../IMG/featured/1.jpg" alt="some image">
+                <img class="img-fluid mb-3" src="../IMG/watches/1.jpg" alt="some image">
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -145,12 +92,12 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <h5 class="p-name">Sports Shoes</h5>
-                <h4 class="p-price">900Rs</h4>
+                <h5 class="p-name">Sonata</h5>
+                <h4 class="p-price">1200Rs</h4>
                 <button class="buy-btn">Buy Now</button>
             </div>
             <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="../IMG/featured/2.jpg" alt="some image">
+                <img class="img-fluid mb-3" src="../IMG/watches/2.jpg" alt="some image">
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -158,12 +105,12 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <h5 class="p-name">Sneakers</h5>
-                <h4 class="p-price">600Rs</h4>
+                <h5 class="p-name">Titan</h5>
+                <h4 class="p-price">700Rs</h4>
                 <button class="buy-btn">Buy Now</button>
             </div>
             <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="../IMG/featured/3.jpg" alt="some image">
+                <img class="img-fluid mb-3" src="../IMG/watches/3.jpg" alt="some image">
                 <div class="star">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -171,28 +118,27 @@
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                <h5 class="p-name">Bags</h5>
+                <h5 class="p-name">Maxima</h5>
+                <h4 class="p-price">400Rs</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="../IMG/watches/4.jpg" alt="some image">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Fasttrack</h5>
                 <h4 class="p-price">1500Rs</h4>
-                <button class="buy-btn">Buy Now</button>
-            </div>
-            <div class="product text-center col-lg-3 col-md-4 col-12">
-                <img class="img-fluid mb-3" src="../IMG/featured/4.jpg" alt="some image">
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h5 class="p-name">Cap</h5>
-                <h4 class="p-price">200Rs</h4>
                 <button class="buy-btn">Buy Now</button>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="mt-5 py-5">
+    <footer class="mt-5 py-4">
         <div class="row container mx-auto pt-5">
             <div class="footer-one col-lg-3 col-md-6 col-12">
                 <img src="../IMG/logo.png" alt="some image">
@@ -255,30 +201,12 @@
         </div>
     </footer>
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
         integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
-        crossorigin="anonymous"></script> -->
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
         integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
         crossorigin="anonymous"></script>
-
-    <script>
-        let MainImg = document.getElementById('MainImg');
-        let smallimg = document.getElementsByClassName('small-img');
-
-        smallimg[0].addEventListener('click', () => {
-            MainImg.src = smallimg[0].src;
-        });
-        smallimg[1].addEventListener('click', () => {
-            MainImg.src = smallimg[1].src;
-        });
-        smallimg[2].addEventListener('click', () => {
-            MainImg.src = smallimg[2].src;
-        });
-        smallimg[3].addEventListener('click', () => {
-            MainImg.src = smallimg[3].src;
-        });
-    </script>
 </body>
 
 </html>
