@@ -419,7 +419,7 @@ form {
     padding: 2vh 0
 }
 
-select {
+#body > div > div > div.col-md-4.summary > form > select {
     border: 1px solid rgba(0, 0, 0, 0.137);
     padding: 1.5vh 1vh;
     margin-bottom: 4vh;
